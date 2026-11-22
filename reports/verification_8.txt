@@ -1,0 +1,912 @@
+Homework 3 | Docker 4/6/8 verification | воскресенье, 22 ноября 2026 г. 19:48:37 (MSK)
+Only temporary projects hw3test179536611730221six / hw3test179536611730221eight are removed, with THEIR volumes.
+
+Docker Compose version v5.7.0
+=== LEVEL 4: single container ===
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 485B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.13-slim
+#2 ...
+
+#3 [auth] library/python:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.13-slim
+#2 DONE 5.2s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 8.87kB done
+#5 DONE 0.0s
+
+#6 [1/5] FROM docker.io/library/python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90
+#6 resolve docker.io/library/python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90 0.0s done
+#6 sha256:42ebab0032b11085076fe636a4286d0178552541033ccc92fb0397048dbedc12 0B / 250B 0.2s
+#6 sha256:0e670227450615dd602171dd44b95920546465dfe6074f45e8a41a66b7723d83 0B / 1.27MB 0.2s
+#6 sha256:42ebab0032b11085076fe636a4286d0178552541033ccc92fb0397048dbedc12 250B / 250B 0.3s
+#6 sha256:174bfd419dd81cd676d1a8618deb0ba079dc16f9e053afe66908dd3727c3cc3f 0B / 11.86MB 0.2s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 0B / 30.21MB 0.2s
+#6 sha256:42ebab0032b11085076fe636a4286d0178552541033ccc92fb0397048dbedc12 250B / 250B 0.3s done
+#6 sha256:174bfd419dd81cd676d1a8618deb0ba079dc16f9e053afe66908dd3727c3cc3f 1.05MB / 11.86MB 1.7s
+#6 sha256:174bfd419dd81cd676d1a8618deb0ba079dc16f9e053afe66908dd3727c3cc3f 2.10MB / 11.86MB 2.0s
+#6 sha256:174bfd419dd81cd676d1a8618deb0ba079dc16f9e053afe66908dd3727c3cc3f 3.15MB / 11.86MB 2.3s
+#6 sha256:174bfd419dd81cd676d1a8618deb0ba079dc16f9e053afe66908dd3727c3cc3f 4.19MB / 11.86MB 2.9s
+#6 sha256:174bfd419dd81cd676d1a8618deb0ba079dc16f9e053afe66908dd3727c3cc3f 5.24MB / 11.86MB 3.0s
+#6 sha256:174bfd419dd81cd676d1a8618deb0ba079dc16f9e053afe66908dd3727c3cc3f 6.29MB / 11.86MB 3.3s
+#6 sha256:174bfd419dd81cd676d1a8618deb0ba079dc16f9e053afe66908dd3727c3cc3f 7.34MB / 11.86MB 3.5s
+#6 sha256:174bfd419dd81cd676d1a8618deb0ba079dc16f9e053afe66908dd3727c3cc3f 8.39MB / 11.86MB 3.8s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 2.10MB / 30.21MB 3.8s
+#6 sha256:174bfd419dd81cd676d1a8618deb0ba079dc16f9e053afe66908dd3727c3cc3f 9.44MB / 11.86MB 4.1s
+#6 sha256:174bfd419dd81cd676d1a8618deb0ba079dc16f9e053afe66908dd3727c3cc3f 11.86MB / 11.86MB 4.5s done
+#6 sha256:0e670227450615dd602171dd44b95920546465dfe6074f45e8a41a66b7723d83 0B / 1.27MB 5.3s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 4.19MB / 30.21MB 5.6s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 6.29MB / 30.21MB 7.1s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 8.39MB / 30.21MB 8.3s
+#6 sha256:0e670227450615dd602171dd44b95920546465dfe6074f45e8a41a66b7723d83 1.05MB / 1.27MB 9.3s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 10.49MB / 30.21MB 9.8s
+#6 sha256:0e670227450615dd602171dd44b95920546465dfe6074f45e8a41a66b7723d83 1.27MB / 1.27MB 10.5s done
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 12.58MB / 30.21MB 10.7s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 14.68MB / 30.21MB 11.4s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 16.78MB / 30.21MB 12.3s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 18.87MB / 30.21MB 13.5s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 20.97MB / 30.21MB 14.4s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 23.07MB / 30.21MB 15.2s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 25.17MB / 30.21MB 15.8s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 27.26MB / 30.21MB 16.5s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 29.36MB / 30.21MB 17.6s
+#6 sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 30.21MB / 30.21MB 17.7s done
+#6 extracting sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef
+#6 extracting sha256:acd43e9bebc37bc4ba7a5f47bd7598913337803e53d468f37d940f11f5d5f1ef 0.3s done
+#6 DONE 18.0s
+
+#6 [1/5] FROM docker.io/library/python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90
+#6 extracting sha256:0e670227450615dd602171dd44b95920546465dfe6074f45e8a41a66b7723d83 0.0s done
+#6 extracting sha256:174bfd419dd81cd676d1a8618deb0ba079dc16f9e053afe66908dd3727c3cc3f 0.1s done
+#6 DONE 18.2s
+
+#6 [1/5] FROM docker.io/library/python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90
+#6 extracting sha256:42ebab0032b11085076fe636a4286d0178552541033ccc92fb0397048dbedc12 done
+#6 DONE 18.2s
+
+#7 [2/5] WORKDIR /app
+#7 DONE 0.1s
+
+#8 [3/5] COPY app/requirements.txt /tmp/requirements.txt
+#8 DONE 0.0s
+
+#9 [4/5] RUN pip install --no-cache-dir -r /tmp/requirements.txt
+#9 2.178 Collecting redis==5.2.1 (from -r /tmp/requirements.txt (line 1))
+#9 4.125   Downloading redis-5.2.1-py3-none-any.whl.metadata (9.1 kB)
+#9 4.338 Downloading redis-5.2.1-py3-none-any.whl (261 kB)
+#9 5.778 Installing collected packages: redis
+#9 5.853 Successfully installed redis-5.2.1
+#9 5.853 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#9 5.853 
+#9 5.853 [notice] A new release of pip is available: 26.2.2 -> 26.3
+#9 5.853 [notice] To update, run: pip install --upgrade pip
+#9 DONE 5.9s
+
+#10 [5/5] COPY app/ /app/
+#10 DONE 0.0s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 0.2s done
+#11 exporting manifest sha256:00215e878e8a257e68396d4ba6746d72d783b6d5daeafac68414f1bb5a89cbf4 done
+#11 exporting config sha256:38c4a690c6589a0433ef6a866b061a94a41b6491ea6d1478202a97f906b0b453 done
+#11 exporting attestation manifest sha256:0b035df786a047f57b354cde614f12829999f4a82da61b43c02da639aca7314f done
+#11 exporting manifest list sha256:ec85a61a6b8853341bec3a3e8c9444e92203c6fcbc5fb913becdc8e6addc4d13 done
+#11 naming to docker.io/library/hw3test179536611730221:local done
+#11 unpacking to docker.io/library/hw3test179536611730221:local
+#11 unpacking to docker.io/library/hw3test179536611730221:local 0.5s done
+#11 DONE 0.7s
+0589d2704e6083ad5229b75ca2e8e432564911d54dd5d4625da763a81534a8a5
+ready: http://127.0.0.1:18084/readyz -> 200
+GET / -> HTTP 200 {"greeting": "Level 4 Docker", "count": 0, "hostname": "0589d2704e60", "storage": "sqlite"}
+POST /increment -> HTTP 200 {"greeting": "Level 4 Docker", "count": 1, "hostname": "0589d2704e60", "storage": "sqlite"}
+POST /increment -> HTTP 200 {"greeting": "Level 4 Docker", "count": 2, "hostname": "0589d2704e60", "storage": "sqlite"}
+2026-11-22 16:49:08,844 listening port=8000 storage=sqlite
+2026-11-22 16:49:08,853 http 172.17.0.1 "GET /readyz HTTP/1.1" 200 -
+2026-11-22 16:49:08,866 http 172.17.0.1 "GET / HTTP/1.1" 200 -
+2026-11-22 16:49:08,886 http 172.17.0.1 "POST /increment HTTP/1.1" 200 -
+2026-11-22 16:49:08,907 http 172.17.0.1 "POST /increment HTTP/1.1" 200 -
+PASS level 4
+
+=== LEVEL 6: Compose + SQLite named volume ===
+ Image hw3test179536611730221six-app Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 568B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 485B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.13-slim
+#3 DONE 0.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 127B done
+#5 DONE 0.0s
+
+#6 [1/5] FROM docker.io/library/python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90
+#6 resolve docker.io/library/python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90 0.0s done
+#6 DONE 0.0s
+
+#7 [2/5] WORKDIR /app
+#7 CACHED
+
+#8 [4/5] RUN pip install --no-cache-dir -r /tmp/requirements.txt
+#8 CACHED
+
+#9 [3/5] COPY app/requirements.txt /tmp/requirements.txt
+#9 CACHED
+
+#10 [5/5] COPY app/ /app/
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 exporting manifest sha256:4d8b1159d355d4f3bd2b0ec377cf99441555040243c4aa3e723b82143bdb4b45 done
+#11 exporting config sha256:dc8780f0d1f2485b8a6322a041f3615c32bd107414dbfb427e59de739fd82337 done
+#11 exporting attestation manifest sha256:36c96634abef318d4a9487b62bc0a78bcc5296ed19699c0cb2148e03289c0bf3 done
+#11 exporting manifest list sha256:3b7a79ac8f3eca49ff12bdcc8e6eb8373b1d6ff5b1cb521717a9c31a896a4499 done
+#11 naming to docker.io/library/hw3test179536611730221six-app:latest done
+#11 unpacking to docker.io/library/hw3test179536611730221six-app:latest done
+#11 DONE 0.0s
+
+#12 resolving provenance for metadata file
+#12 DONE 0.0s
+ Image hw3test179536611730221six-app Built 
+ Volume hw3test179536611730221six_sqlite_data Creating 
+ Volume hw3test179536611730221six_sqlite_data Creating 
+ Network hw3test179536611730221six_default Creating 
+ Network hw3test179536611730221six_default Creating 
+ Volume hw3test179536611730221six_sqlite_data Created 
+ Volume hw3test179536611730221six_sqlite_data Created 
+ Network hw3test179536611730221six_default Created 
+ Network hw3test179536611730221six_default Created 
+ Container hw3test179536611730221six-app-1 Creating 
+ Container hw3test179536611730221six-app-1 Created 
+ Container hw3test179536611730221six-app-1 Starting 
+ Container hw3test179536611730221six-app-1 Started 
+ready: http://127.0.0.1:18086/readyz -> 200
+GET / -> HTTP 200 {"greeting": "Hello from HSE Docker!", "count": 0, "hostname": "70e42a70e4f5", "storage": "sqlite"}
+POST /increment -> HTTP 200 {"greeting": "Hello from HSE Docker!", "count": 1, "hostname": "70e42a70e4f5", "storage": "sqlite"}
+POST /increment -> HTTP 200 {"greeting": "Hello from HSE Docker!", "count": 2, "hostname": "70e42a70e4f5", "storage": "sqlite"}
+GET / -> HTTP 200 {"greeting": "Hello from HSE Docker!", "count": 2, "hostname": "70e42a70e4f5", "storage": "sqlite"}
+SQLite before down = 2
+app-1  | 2026-11-22 16:49:09,883 listening port=8000 storage=sqlite
+app-1  | 2026-11-22 16:49:09,888 http 192.168.65.1 "GET /readyz HTTP/1.1" 200 -
+app-1  | 2026-11-22 16:49:09,904 http 192.168.65.1 "GET / HTTP/1.1" 200 -
+app-1  | 2026-11-22 16:49:09,927 http 192.168.65.1 "POST /increment HTTP/1.1" 200 -
+app-1  | 2026-11-22 16:49:09,945 http 192.168.65.1 "POST /increment HTTP/1.1" 200 -
+app-1  | 2026-11-22 16:49:09,963 http 192.168.65.1 "GET / HTTP/1.1" 200 -
+ Container hw3test179536611730221six-app-1 Stopping 
+ Container hw3test179536611730221six-app-1 Stopped 
+ Container hw3test179536611730221six-app-1 Removing 
+ Container hw3test179536611730221six-app-1 Removed 
+ Network hw3test179536611730221six_default Removing 
+ Network hw3test179536611730221six_default Removed 
+ Network hw3test179536611730221six_default Creating 
+ Network hw3test179536611730221six_default Creating 
+ Network hw3test179536611730221six_default Created 
+ Network hw3test179536611730221six_default Created 
+ Container hw3test179536611730221six-app-1 Creating 
+ Container hw3test179536611730221six-app-1 Created 
+ Container hw3test179536611730221six-app-1 Starting 
+ Container hw3test179536611730221six-app-1 Started 
+ready: http://127.0.0.1:18086/readyz -> 200
+GET / -> HTTP 200 {"greeting": "Hello from HSE Docker!", "count": 2, "hostname": "7c6f1e5bba6f", "storage": "sqlite"}
+SQLite after down/up = 2
+ Container hw3test179536611730221six-app-1 Stopping 
+ Container hw3test179536611730221six-app-1 Stopped 
+ Container hw3test179536611730221six-app-1 Removing 
+ Container hw3test179536611730221six-app-1 Removed 
+ Network hw3test179536611730221six_default Removing 
+ Network hw3test179536611730221six_default Removed 
+PASS level 6
+
+=== LEVEL 8: app + Redis, healthchecks, persistence and recovery ===
+ Image redis:7.4-alpine Pulling 
+ 16cda2556898 Pulling fs layer 0B
+ 8fe75981dbac Pulling fs layer 0B
+ fea5b91588ca Pulling fs layer 0B
+ fb602ba0b128 Pulling fs layer 0B
+ e8978eba2bb2 Pulling fs layer 0B
+ 54abef31ddd9 Pulling fs layer 0B
+ 4f4fb700ef54 Pulling fs layer 0B
+ 8fe75981dbac Download complete 0B
+ 16cda2556898 Download complete 0B
+ fb602ba0b128 Download complete 0B
+ 4f4fb700ef54 Download complete 0B
+ fea5b91588ca Downloading 1.049MB
+ fea5b91588ca Downloading 1.049MB
+ fea5b91588ca Downloading 1.049MB
+ e8978eba2bb2 Download complete 0B
+ fea5b91588ca Downloading 1.049MB
+ fea5b91588ca Downloading 1.049MB
+ fea5b91588ca Downloading 1.049MB
+ fea5b91588ca Downloading 1.049MB
+ fea5b91588ca Downloading 1.049MB
+ fea5b91588ca Downloading 2.097MB
+ fea5b91588ca Downloading 2.097MB
+ fea5b91588ca Downloading 2.097MB
+ fea5b91588ca Downloading 2.097MB
+ fea5b91588ca Downloading 3.146MB
+ fea5b91588ca Downloading 3.146MB
+ fea5b91588ca Downloading 3.146MB
+ fea5b91588ca Downloading 3.146MB
+ fea5b91588ca Downloading 3.146MB
+ a99ab7f50347 Download complete 0B
+ fea5b91588ca Download complete 0B
+ fea5b91588ca Extracting 1B
+ 8fe75981dbac Pull complete 0B
+ fb602ba0b128 Pull complete 0B
+ fea5b91588ca Pull complete 0B
+ 4704a97c8705 Download complete 0B
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 1.049MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 2.097MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 3.146MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 4.194MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 5.243MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 6.291MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 7.34MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 8.389MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 9.437MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 10.49MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Downloading 11.53MB
+ 54abef31ddd9 Download complete 0B
+ 54abef31ddd9 Extracting 1B
+ 16cda2556898 Pull complete 0B
+ 4f4fb700ef54 Pull complete 0B
+ e8978eba2bb2 Pull complete 0B
+ 54abef31ddd9 Pull complete 0B
+ Image redis:7.4-alpine Pulled 
+ Image hw3test179536611730221eight-app Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 572B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 485B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.13-slim
+#3 DONE 1.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 127B done
+#5 DONE 0.0s
+
+#6 [1/5] FROM docker.io/library/python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90
+#6 resolve docker.io/library/python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90 0.0s done
+#6 DONE 0.0s
+
+#7 [4/5] RUN pip install --no-cache-dir -r /tmp/requirements.txt
+#7 CACHED
+
+#8 [2/5] WORKDIR /app
+#8 CACHED
+
+#9 [3/5] COPY app/requirements.txt /tmp/requirements.txt
+#9 CACHED
+
+#10 [5/5] COPY app/ /app/
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 exporting manifest sha256:3cd73532c6950c7644385ac570a906a076d7bb0158cc72f29cb7a2f76a8c7134 done
+#11 exporting config sha256:55e0c3bbf576fd63aad17cae7f538c667e33e1f47982caf6f0b2e97e1ddef499 done
+#11 exporting attestation manifest sha256:9ceec69d34fad4507aea87cd0608f231f911cbb8a2dd1167b7aa4ef37c5a68cc done
+#11 exporting manifest list sha256:f360b4511d551780d5eb4def930849cf55a18d73a989f6dfca12bb405b14017f done
+#11 naming to docker.io/library/hw3test179536611730221eight-app:latest done
+#11 unpacking to docker.io/library/hw3test179536611730221eight-app:latest done
+#11 DONE 0.0s
+
+#12 resolving provenance for metadata file
+#12 DONE 0.0s
+ Image hw3test179536611730221eight-app Built 
+ Network hw3test179536611730221eight_default Creating 
+ Network hw3test179536611730221eight_default Creating 
+ Volume hw3test179536611730221eight_redis_data Creating 
+ Volume hw3test179536611730221eight_redis_data Creating 
+ Volume hw3test179536611730221eight_redis_data Created 
+ Volume hw3test179536611730221eight_redis_data Created 
+ Network hw3test179536611730221eight_default Created 
+ Network hw3test179536611730221eight_default Created 
+ Container hw3test179536611730221eight-redis-1 Creating 
+ Container hw3test179536611730221eight-redis-1 Created 
+ Container hw3test179536611730221eight-app-1 Creating 
+ Container hw3test179536611730221eight-app-1 Created 
+ Container hw3test179536611730221eight-redis-1 Starting 
+ Container hw3test179536611730221eight-redis-1 Started 
+ Container hw3test179536611730221eight-redis-1 Waiting 
+ Container hw3test179536611730221eight-redis-1 Healthy 
+ Container hw3test179536611730221eight-app-1 Starting 
+ Container hw3test179536611730221eight-app-1 Started 
+ready: http://127.0.0.1:18088/readyz -> 200
+NAME                                  IMAGE                             COMMAND                  SERVICE   CREATED         STATUS                           PORTS
+hw3test179536611730221eight-app-1     hw3test179536611730221eight-app   "python app.py"          app       7 seconds ago   Up 1 second (health: starting)   0.0.0.0:18088->8000/tcp, [::]:18088->8000/tcp
+hw3test179536611730221eight-redis-1   redis:7.4-alpine                  "docker-entrypoint.s…"   redis     7 seconds ago   Up 6 seconds (healthy)           6379/tcp
+GET / -> HTTP 200 {"greeting": "Hello from HSE Docker!", "count": 0, "hostname": "b7ff23e84d9d", "storage": "redis"}
+POST /increment -> HTTP 200 {"greeting": "Hello from HSE Docker!", "count": 1, "hostname": "b7ff23e84d9d", "storage": "redis"}
+POST /increment -> HTTP 200 {"greeting": "Hello from HSE Docker!", "count": 2, "hostname": "b7ff23e84d9d", "storage": "redis"}
+POST /increment -> HTTP 200 {"greeting": "Hello from HSE Docker!", "count": 3, "hostname": "b7ff23e84d9d", "storage": "redis"}
+GET / -> HTTP 200 {"greeting": "Hello from HSE Docker!", "count": 3, "hostname": "b7ff23e84d9d", "storage": "redis"}
+Redis before down = 3
+ Container hw3test179536611730221eight-app-1 Stopping 
+ Container hw3test179536611730221eight-app-1 Stopped 
+ Container hw3test179536611730221eight-app-1 Removing 
+ Container hw3test179536611730221eight-app-1 Removed 
+ Container hw3test179536611730221eight-redis-1 Stopping 
+ Container hw3test179536611730221eight-redis-1 Stopped 
+ Container hw3test179536611730221eight-redis-1 Removing 
+ Container hw3test179536611730221eight-redis-1 Removed 
+ Network hw3test179536611730221eight_default Removing 
+ Network hw3test179536611730221eight_default Removed 
+ Network hw3test179536611730221eight_default Creating 
+ Network hw3test179536611730221eight_default Creating 
+ Network hw3test179536611730221eight_default Created 
+ Network hw3test179536611730221eight_default Created 
+ Container hw3test179536611730221eight-redis-1 Creating 
+ Container hw3test179536611730221eight-redis-1 Created 
+ Container hw3test179536611730221eight-app-1 Creating 
+ Container hw3test179536611730221eight-app-1 Created 
+ Container hw3test179536611730221eight-redis-1 Starting 
+ Container hw3test179536611730221eight-redis-1 Started 
+ Container hw3test179536611730221eight-redis-1 Waiting 
+ Container hw3test179536611730221eight-redis-1 Healthy 
+ Container hw3test179536611730221eight-app-1 Starting 
+ Container hw3test179536611730221eight-app-1 Started 
+ready: http://127.0.0.1:18088/readyz -> 200
+GET / -> HTTP 200 {"greeting": "Hello from HSE Docker!", "count": 3, "hostname": "f40f00449574", "storage": "redis"}
+Redis after down/up = 3
+ Container hw3test179536611730221eight-redis-1 Stopping 
+ Container hw3test179536611730221eight-redis-1 Stopped 
+GET /healthz -> HTTP 200 {"status": "alive"}
+GET /readyz -> HTTP 503 {"error": "storage_unavailable"}
+POST /increment -> HTTP 503 {"error": "storage_unavailable"}
+ Container hw3test179536611730221eight-redis-1 Starting 
+ Container hw3test179536611730221eight-redis-1 Started 
+ready: http://127.0.0.1:18088/readyz -> 200
+GET / -> HTTP 200 {"greeting": "Hello from HSE Docker!", "count": 3, "hostname": "f40f00449574", "storage": "redis"}
+POST /increment -> HTTP 200 {"greeting": "Hello from HSE Docker!", "count": 4, "hostname": "f40f00449574", "storage": "redis"}
+GET /healthz -> HTTP 200 {"status": "alive"}
+GET /readyz -> HTTP 200 {"status": "ready", "storage": "redis"}
+NAME                                  IMAGE                             COMMAND                  SERVICE   CREATED         STATUS                                     PORTS
+hw3test179536611730221eight-app-1     hw3test179536611730221eight-app   "python app.py"          app       8 seconds ago   Up 2 seconds (health: starting)            0.0.0.0:18088->8000/tcp, [::]:18088->8000/tcp
+hw3test179536611730221eight-redis-1   redis:7.4-alpine                  "docker-entrypoint.s…"   redis     8 seconds ago   Up Less than a second (health: starting)   6379/tcp
+redis-1  | 1:C 22 Nov 2026 16:50:26.809 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 22 Nov 2026 16:50:26.809 * Redis version=7.4.12, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1  | 1:C 22 Nov 2026 16:50:26.809 * Configuration loaded
+redis-1  | 1:M 22 Nov 2026 16:50:26.809 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 22 Nov 2026 16:50:26.809 * Running mode=standalone, port=6379.
+redis-1  | 1:M 22 Nov 2026 16:50:26.810 * Server initialized
+redis-1  | 1:M 22 Nov 2026 16:50:26.810 * Reading RDB base file on AOF loading...
+redis-1  | 1:M 22 Nov 2026 16:50:26.810 * Loading RDB produced by version 7.4.12
+redis-1  | 1:M 22 Nov 2026 16:50:26.810 * RDB age 10 seconds
+redis-1  | 1:M 22 Nov 2026 16:50:26.810 * RDB memory usage when created 0.94 Mb
+redis-1  | 1:M 22 Nov 2026 16:50:26.810 * RDB is base AOF
+redis-1  | 1:M 22 Nov 2026 16:50:26.810 * Done loading RDB, keys loaded: 0, keys expired: 0.
+redis-1  | 1:M 22 Nov 2026 16:50:26.810 * DB loaded from base file appendonly.aof.1.base.rdb: 0.000 seconds
+redis-1  | 1:M 22 Nov 2026 16:50:26.810 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.000 seconds
+redis-1  | 1:M 22 Nov 2026 16:50:26.810 * DB loaded from append only file: 0.000 seconds
+redis-1  | 1:M 22 Nov 2026 16:50:26.810 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+redis-1  | 1:M 22 Nov 2026 16:50:26.810 * Ready to accept connections tcp
+redis-1  | 1:signal-handler (1795366233) Received SIGTERM scheduling shutdown...
+redis-1  | 1:M 22 Nov 2026 16:50:33.097 * User requested shutdown...
+redis-1  | 1:M 22 Nov 2026 16:50:33.097 * Calling fsync() on the AOF file.
+redis-1  | 1:M 22 Nov 2026 16:50:33.097 * Saving the final RDB snapshot before exiting.
+redis-1  | 1:M 22 Nov 2026 16:50:33.098 * DB saved on disk
+redis-1  | 1:M 22 Nov 2026 16:50:33.098 # Redis is now ready to exit, bye bye...
+redis-1  | 1:C 22 Nov 2026 16:50:34.570 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 22 Nov 2026 16:50:34.570 * Redis version=7.4.12, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1  | 1:C 22 Nov 2026 16:50:34.570 * Configuration loaded
+redis-1  | 1:M 22 Nov 2026 16:50:34.570 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 22 Nov 2026 16:50:34.571 * Running mode=standalone, port=6379.
+redis-1  | 1:M 22 Nov 2026 16:50:34.571 * Server initialized
+redis-1  | 1:M 22 Nov 2026 16:50:34.571 * Reading RDB base file on AOF loading...
+redis-1  | 1:M 22 Nov 2026 16:50:34.571 * Loading RDB produced by version 7.4.12
+redis-1  | 1:M 22 Nov 2026 16:50:34.571 * RDB age 18 seconds
+redis-1  | 1:M 22 Nov 2026 16:50:34.571 * RDB memory usage when created 0.94 Mb
+redis-1  | 1:M 22 Nov 2026 16:50:34.571 * RDB is base AOF
+redis-1  | 1:M 22 Nov 2026 16:50:34.571 * Done loading RDB, keys loaded: 0, keys expired: 0.
+redis-1  | 1:M 22 Nov 2026 16:50:34.571 * DB loaded from base file appendonly.aof.1.base.rdb: 0.000 seconds
+redis-1  | 1:M 22 Nov 2026 16:50:34.571 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.000 seconds
+redis-1  | 1:M 22 Nov 2026 16:50:34.571 * DB loaded from append only file: 0.000 seconds
+redis-1  | 1:M 22 Nov 2026 16:50:34.571 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+redis-1  | 1:M 22 Nov 2026 16:50:34.571 * Ready to accept connections tcp
+app-1    | 2026-11-22 16:50:31,943 listening port=8000 storage=redis
+app-1    | 2026-11-22 16:50:32,916 http 192.168.65.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-22 16:50:32,939 http 192.168.65.1 "GET / HTTP/1.1" 200 -
+app-1    | 2026-11-22 16:50:33,187 http 192.168.65.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-22 16:50:33,926 storage_unavailable: ConnectionError
+app-1    | 2026-11-22 16:50:33,927 http 192.168.65.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-22 16:50:34,422 storage_unavailable: ConnectionError
+app-1    | 2026-11-22 16:50:34,422 http 192.168.65.1 "POST /increment HTTP/1.1" 503 -
+app-1    | 2026-11-22 16:50:34,590 http 192.168.65.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-22 16:50:34,656 http 192.168.65.1 "GET / HTTP/1.1" 200 -
+app-1    | 2026-11-22 16:50:34,676 http 192.168.65.1 "POST /increment HTTP/1.1" 200 -
+app-1    | 2026-11-22 16:50:34,695 http 192.168.65.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-22 16:50:34,710 http 192.168.65.1 "GET /readyz HTTP/1.1" 200 -
+
+PASS level 8. All checks passed.
